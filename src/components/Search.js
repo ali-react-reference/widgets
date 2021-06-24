@@ -31,7 +31,7 @@ const Search = ({ items }) => {
       search();
     } else {
       // create a new timeout fn to call the api after 500 ms of no change
-      var timeoutId = setTimeout(() => {
+      const timeoutId = setTimeout(() => {
         if (term) {
           search();
         }

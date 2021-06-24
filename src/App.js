@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import Accordian from "./components/Accordian";
 import Search from "./components/Search";
+import Dropdown from "./components/Dropdown";
+import Translate from "./components/Translate"
 
 const items = [
   {
@@ -17,12 +19,29 @@ const items = [
   },
 ];
 
+// a list of options that App will send to Dropdown as props
+const options = {
+  optionType: "colour",
+  optionList: [
+    {
+      label: "Red",
+      value: "red",
+    },
+    {
+      label: "Green",
+      value: "green",
+    },
+    {
+      label: "Blue",
+      value: "blue",
+    },
+  ],
+};
+
 const App = () => {
+
   return (
-    <div>
-      {/* <Accordian items={items} /> */}
-      <Search></Search>
-    </div>
+    <Translate/>
   );
 };
 export default App;
