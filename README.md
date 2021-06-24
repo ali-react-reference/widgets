@@ -7,3 +7,4 @@ This contains:
 - Custom hooks
   - custom repeatable tasks
 - Throttling requests - Search
+- Navigation (via navigation events) - Header, Route, Link
